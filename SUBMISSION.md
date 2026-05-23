@@ -201,7 +201,7 @@ spectrap report --results generated/spectrap_run/results.json
 spectrap validate path/to/ai_generated_test.py
 ```
 
-Ships with GitHub Actions CI workflows for gating AI-generated specs in production repositories.
+Can be integrated into CI pipelines to gate AI-generated specs before they enter verification workflows.
 
 ---
 

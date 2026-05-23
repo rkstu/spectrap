@@ -1,0 +1,4318 @@
+[
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 0,
+    "output_path": "generated/main/json_roundtrip__D__gpt-4o-mini__0.py",
+    "timestamp": 1779521891.518791,
+    "validation": {
+      "file_path": "generated/main/json_roundtrip__D__gpt-4o-mini__0.py",
+      "syntactically_valid": true,
+      "num_properties": 5,
+      "num_passed": 5,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 1,
+    "output_path": "generated/main/json_roundtrip__D__gpt-4o-mini__1.py",
+    "timestamp": 1779521896.996894,
+    "validation": {
+      "file_path": "generated/main/json_roundtrip__D__gpt-4o-mini__1.py",
+      "syntactically_valid": true,
+      "num_properties": 1,
+      "num_passed": 1,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 2,
+    "output_path": "generated/main/json_roundtrip__D__gpt-4o-mini__2.py",
+    "timestamp": 1779521907.462718,
+    "validation": {
+      "file_path": "generated/main/json_roundtrip__D__gpt-4o-mini__2.py",
+      "syntactically_valid": true,
+      "num_properties": 1,
+      "num_passed": 1,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "json_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 0,
+    "output_path": "generated/main/json_roundtrip__D__gpt-4o__0.py",
+    "timestamp": 1779521915.665641,
+    "validation": {
+      "file_path": "generated/main/json_roundtrip__D__gpt-4o__0.py",
+      "syntactically_valid": true,
+      "num_properties": 2,
+      "num_passed": 2,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "json_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 1,
+    "output_path": "generated/main/json_roundtrip__D__gpt-4o__1.py",
+    "timestamp": 1779521924.588394,
+    "validation": {
+      "file_path": "generated/main/json_roundtrip__D__gpt-4o__1.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 4,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_json_round_trip",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_json_is_valid",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "json_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 2,
+    "output_path": "generated/main/json_roundtrip__D__gpt-4o__2.py",
+    "timestamp": 1779521933.59692,
+    "validation": {
+      "file_path": "generated/main/json_roundtrip__D__gpt-4o__2.py",
+      "syntactically_valid": true,
+      "num_properties": 1,
+      "num_passed": 0,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_json_dumps_loads_idempotent",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/main/json_roundtrip__G3__gpt-4o-mini__0.py",
+    "timestamp": 1779521945.034534,
+    "validation": {
+      "file_path": "generated/main/json_roundtrip__G3__gpt-4o-mini__0.py",
+      "syntactically_valid": false,
+      "num_properties": 0,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "parse",
+          "error_type": "SyntaxError",
+          "error_message": "positional argument follows keyword argument (<unknown>, line 7)"
+        }
+      ],
+      "classification": "unparseable"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/main/json_roundtrip__G3__gpt-4o-mini__1.py",
+    "timestamp": 1779521955.814622,
+    "validation": {
+      "file_path": "generated/main/json_roundtrip__G3__gpt-4o-mini__1.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 6,
+      "failures": [
+        {
+          "test_name": "import/collection",
+          "error_type": "CollectionError",
+          "error_message": "============================= test session starts ==============================\nplatform darwin -- Python 3.14.5, pytest-9.0.3, pluggy-1.6.0 -- /opt/homebrew/opt/python@3.14/bin/python3.14\nhypothesis profile 'default'\nrootdir: generated/main\nplugins: hypothesis-6.152.9, anyio-4.13.0\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n____________ ERROR collecting json_roun"
+        }
+      ],
+      "classification": "errored"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 2,
+    "output_path": "generated/main/json_roundtrip__G3__gpt-4o-mini__2.py",
+    "timestamp": 1779521968.212804,
+    "validation": {
+      "file_path": "generated/main/json_roundtrip__G3__gpt-4o-mini__2.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 6,
+      "failures": [
+        {
+          "test_name": "import/collection",
+          "error_type": "CollectionError",
+          "error_message": "============================= test session starts ==============================\nplatform darwin -- Python 3.14.5, pytest-9.0.3, pluggy-1.6.0 -- /opt/homebrew/opt/python@3.14/bin/python3.14\nhypothesis profile 'default'\nrootdir: generated/main\nplugins: hypothesis-6.152.9, anyio-4.13.0\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n____________ ERROR collecting json_roun"
+        }
+      ],
+      "classification": "errored"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "json_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/main/json_roundtrip__G3__gpt-4o__0.py",
+    "timestamp": 1779521973.592146,
+    "validation": {
+      "file_path": "generated/main/json_roundtrip__G3__gpt-4o__0.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 0,
+      "num_failed": 6,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_serialization_round_trip",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_dictionary_keys_are_strings",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_json_object_deserializes_to_dictionary",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_json_array_deserializes_to_list",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_known_structure_preservation",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_nested_structure_preservation",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "json_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/main/json_roundtrip__G3__gpt-4o__1.py",
+    "timestamp": 1779521979.680736,
+    "validation": {
+      "file_path": "generated/main/json_roundtrip__G3__gpt-4o__1.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 6,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "json_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 2,
+    "output_path": "generated/main/json_roundtrip__G3__gpt-4o__2.py",
+    "timestamp": 1779521985.781368,
+    "validation": {
+      "file_path": "generated/main/json_roundtrip__G3__gpt-4o__2.py",
+      "syntactically_valid": true,
+      "num_properties": 7,
+      "num_passed": 7,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 0,
+    "output_path": "generated/main/json_roundtrip__G4__gpt-4o-mini__0.py",
+    "timestamp": 1779522003.027552,
+    "validation": {
+      "file_path": "generated/main/json_roundtrip__G4__gpt-4o-mini__0.py",
+      "syntactically_valid": true,
+      "num_properties": 8,
+      "num_passed": 5,
+      "num_failed": 3,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_dumps_same_as_str",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_json_loads_empty_string_raises",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_dumps_symmetric",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 1,
+    "output_path": "generated/main/json_roundtrip__G4__gpt-4o-mini__1.py",
+    "timestamp": 1779522016.053065,
+    "validation": {
+      "file_path": "generated/main/json_roundtrip__G4__gpt-4o-mini__1.py",
+      "syntactically_valid": true,
+      "num_properties": 2,
+      "num_passed": 1,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_loads_properties",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 2,
+    "output_path": "generated/main/json_roundtrip__G4__gpt-4o-mini__2.py",
+    "timestamp": 1779522029.341464,
+    "validation": {
+      "file_path": "generated/main/json_roundtrip__G4__gpt-4o-mini__2.py",
+      "syntactically_valid": true,
+      "num_properties": 9,
+      "num_passed": 6,
+      "num_failed": 3,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_json_dumps_loads_round_trip",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_json_loads_invalid_json",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_json_dumps_float",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "json_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 0,
+    "output_path": "generated/main/json_roundtrip__G4__gpt-4o__0.py",
+    "timestamp": 1779522045.1216378,
+    "validation": {
+      "file_path": "generated/main/json_roundtrip__G4__gpt-4o__0.py",
+      "syntactically_valid": true,
+      "num_properties": 16,
+      "num_passed": 14,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_json_loads_with_quoted_string",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_json_loads_invalid_json",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "json_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 1,
+    "output_path": "generated/main/json_roundtrip__G4__gpt-4o__1.py",
+    "timestamp": 1779522056.9807382,
+    "validation": {
+      "file_path": "generated/main/json_roundtrip__G4__gpt-4o__1.py",
+      "syntactically_valid": true,
+      "num_properties": 10,
+      "num_passed": 10,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "vacuous"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "json_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 2,
+    "output_path": "generated/main/json_roundtrip__G4__gpt-4o__2.py",
+    "timestamp": 1779522066.7182279,
+    "validation": {
+      "file_path": "generated/main/json_roundtrip__G4__gpt-4o__2.py",
+      "syntactically_valid": true,
+      "num_properties": 16,
+      "num_passed": 13,
+      "num_failed": 3,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_dumps_float",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_dumps_list_of_booleans",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_dumps_tuple",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/main/json_roundtrip__F__gpt-4o-mini__0.py",
+    "timestamp": 1779522083.8050802,
+    "validation": {
+      "file_path": "generated/main/json_roundtrip__F__gpt-4o-mini__0.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 6,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/main/json_roundtrip__F__gpt-4o-mini__1.py",
+    "timestamp": 1779522114.251053,
+    "validation": {
+      "file_path": "generated/main/json_roundtrip__F__gpt-4o-mini__1.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 6,
+      "failures": [
+        {
+          "test_name": "import/collection",
+          "error_type": "CollectionError",
+          "error_message": "============================= test session starts ==============================\nplatform darwin -- Python 3.14.5, pytest-9.0.3, pluggy-1.6.0 -- /opt/homebrew/opt/python@3.14/bin/python3.14\nhypothesis profile 'default'\nrootdir: generated/main\nplugins: hypothesis-6.152.9, anyio-4.13.0\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n____________ ERROR collecting json_roun"
+        }
+      ],
+      "classification": "errored"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 2,
+    "output_path": "generated/main/json_roundtrip__F__gpt-4o-mini__2.py",
+    "timestamp": 1779522139.694914,
+    "validation": {
+      "file_path": "generated/main/json_roundtrip__F__gpt-4o-mini__2.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 4,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_serialization_deserialization",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_type_preservation",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "json_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/main/json_roundtrip__F__gpt-4o__0.py",
+    "timestamp": 1779522148.599468,
+    "validation": {
+      "file_path": "generated/main/json_roundtrip__F__gpt-4o__0.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 6,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "vacuous"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "json_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/main/json_roundtrip__F__gpt-4o__1.py",
+    "timestamp": 1779522152.927443,
+    "validation": {
+      "file_path": "generated/main/json_roundtrip__F__gpt-4o__1.py",
+      "syntactically_valid": true,
+      "num_properties": 8,
+      "num_passed": 8,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "vacuous"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "json_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 2,
+    "output_path": "generated/main/json_roundtrip__F__gpt-4o__2.py",
+    "timestamp": 1779522157.535177,
+    "validation": {
+      "file_path": "generated/main/json_roundtrip__F__gpt-4o__2.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 5,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_dumps_produces_valid_json",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "base64_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 0,
+    "output_path": "generated/main/base64_roundtrip__D__gpt-4o-mini__0.py",
+    "timestamp": 1779522167.67573,
+    "validation": {
+      "file_path": "generated/main/base64_roundtrip__D__gpt-4o-mini__0.py",
+      "syntactically_valid": true,
+      "num_properties": 5,
+      "num_passed": 4,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_b64decode_invalid_padding",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "base64_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 1,
+    "output_path": "generated/main/base64_roundtrip__D__gpt-4o-mini__1.py",
+    "timestamp": 1779522175.865201,
+    "validation": {
+      "file_path": "generated/main/base64_roundtrip__D__gpt-4o-mini__1.py",
+      "syntactically_valid": true,
+      "num_properties": 5,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 5,
+      "failures": [
+        {
+          "test_name": "import/collection",
+          "error_type": "CollectionError",
+          "error_message": "============================= test session starts ==============================\nplatform darwin -- Python 3.14.5, pytest-9.0.3, pluggy-1.6.0 -- /opt/homebrew/opt/python@3.14/bin/python3.14\nhypothesis profile 'default'\nrootdir: generated/main\nplugins: hypothesis-6.152.9, anyio-4.13.0\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n___________ ERROR collecting base64_rou"
+        }
+      ],
+      "classification": "errored"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "base64_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 2,
+    "output_path": "generated/main/base64_roundtrip__D__gpt-4o-mini__2.py",
+    "timestamp": 1779522184.055274,
+    "validation": {
+      "file_path": "generated/main/base64_roundtrip__D__gpt-4o-mini__2.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 5,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_b64decode_invalid_data",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "base64_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 0,
+    "output_path": "generated/main/base64_roundtrip__D__gpt-4o__0.py",
+    "timestamp": 1779522190.1047108,
+    "validation": {
+      "file_path": "generated/main/base64_roundtrip__D__gpt-4o__0.py",
+      "syntactically_valid": true,
+      "num_properties": 3,
+      "num_passed": 2,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_base64_decode_encode_identity",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "base64_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 1,
+    "output_path": "generated/main/base64_roundtrip__D__gpt-4o__1.py",
+    "timestamp": 1779522195.7312472,
+    "validation": {
+      "file_path": "generated/main/base64_roundtrip__D__gpt-4o__1.py",
+      "syntactically_valid": true,
+      "num_properties": 3,
+      "num_passed": 3,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "base64_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 2,
+    "output_path": "generated/main/base64_roundtrip__D__gpt-4o__2.py",
+    "timestamp": 1779522202.181489,
+    "validation": {
+      "file_path": "generated/main/base64_roundtrip__D__gpt-4o__2.py",
+      "syntactically_valid": true,
+      "num_properties": 2,
+      "num_passed": 1,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_b64decode_b64encode_identity",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "base64_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/main/base64_roundtrip__G3__gpt-4o-mini__0.py",
+    "timestamp": 1779522213.446584,
+    "validation": {
+      "file_path": "generated/main/base64_roundtrip__G3__gpt-4o-mini__0.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 6,
+      "failures": [
+        {
+          "test_name": "import/collection",
+          "error_type": "CollectionError",
+          "error_message": "============================= test session starts ==============================\nplatform darwin -- Python 3.14.5, pytest-9.0.3, pluggy-1.6.0 -- /opt/homebrew/opt/python@3.14/bin/python3.14\nhypothesis profile 'default'\nrootdir: generated/main\nplugins: hypothesis-6.152.9, anyio-4.13.0\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n___________ ERROR collecting base64_rou"
+        }
+      ],
+      "classification": "errored"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "base64_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/main/base64_roundtrip__G3__gpt-4o-mini__1.py",
+    "timestamp": 1779522226.451228,
+    "validation": {
+      "file_path": "generated/main/base64_roundtrip__G3__gpt-4o-mini__1.py",
+      "syntactically_valid": true,
+      "num_properties": 7,
+      "num_passed": 7,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "vacuous"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "base64_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 2,
+    "output_path": "generated/main/base64_roundtrip__G3__gpt-4o-mini__2.py",
+    "timestamp": 1779522236.178391,
+    "validation": {
+      "file_path": "generated/main/base64_roundtrip__G3__gpt-4o-mini__2.py",
+      "syntactically_valid": true,
+      "num_properties": 7,
+      "num_passed": 6,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_decoding_invalid_base64_raises_error",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "base64_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/main/base64_roundtrip__G3__gpt-4o__0.py",
+    "timestamp": 1779522244.2529159,
+    "validation": {
+      "file_path": "generated/main/base64_roundtrip__G3__gpt-4o__0.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 6,
+      "failures": [
+        {
+          "test_name": "import/collection",
+          "error_type": "CollectionError",
+          "error_message": "============================= test session starts ==============================\nplatform darwin -- Python 3.14.5, pytest-9.0.3, pluggy-1.6.0 -- /opt/homebrew/opt/python@3.14/bin/python3.14\nhypothesis profile 'default'\nrootdir: generated/main\nplugins: hypothesis-6.152.9, anyio-4.13.0\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n_____________ ERROR collecting base64_r"
+        }
+      ],
+      "classification": "errored"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "base64_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/main/base64_roundtrip__G3__gpt-4o__1.py",
+    "timestamp": 1779522252.155602,
+    "validation": {
+      "file_path": "generated/main/base64_roundtrip__G3__gpt-4o__1.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 5,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_encoded_padding_is_correct",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "base64_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 2,
+    "output_path": "generated/main/base64_roundtrip__G3__gpt-4o__2.py",
+    "timestamp": 1779522259.9925199,
+    "validation": {
+      "file_path": "generated/main/base64_roundtrip__G3__gpt-4o__2.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 5,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_correct_padding",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "base64_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 0,
+    "output_path": "generated/main/base64_roundtrip__G4__gpt-4o-mini__0.py",
+    "timestamp": 1779522270.6890051,
+    "validation": {
+      "file_path": "generated/main/base64_roundtrip__G4__gpt-4o-mini__0.py",
+      "syntactically_valid": true,
+      "num_properties": 9,
+      "num_passed": 6,
+      "num_failed": 3,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_b64decode_invalid_string",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_b64encode_idempotent",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_b64encode_padding",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "base64_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 1,
+    "output_path": "generated/main/base64_roundtrip__G4__gpt-4o-mini__1.py",
+    "timestamp": 1779522282.351184,
+    "validation": {
+      "file_path": "generated/main/base64_roundtrip__G4__gpt-4o-mini__1.py",
+      "syntactically_valid": true,
+      "num_properties": 8,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 8,
+      "failures": [
+        {
+          "test_name": "import/collection",
+          "error_type": "CollectionError",
+          "error_message": "============================= test session starts ==============================\nplatform darwin -- Python 3.14.5, pytest-9.0.3, pluggy-1.6.0 -- /opt/homebrew/opt/python@3.14/bin/python3.14\nhypothesis profile 'default'\nrootdir: generated/main\nplugins: hypothesis-6.152.9, anyio-4.13.0\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n___________ ERROR collecting base64_rou"
+        }
+      ],
+      "classification": "errored"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "base64_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 2,
+    "output_path": "generated/main/base64_roundtrip__G4__gpt-4o-mini__2.py",
+    "timestamp": 1779522295.099786,
+    "validation": {
+      "file_path": "generated/main/base64_roundtrip__G4__gpt-4o-mini__2.py",
+      "syntactically_valid": true,
+      "num_properties": 16,
+      "num_passed": 7,
+      "num_failed": 9,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_b64encode_non_empty",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_b64encode_encode_empty",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_b64encode_check_characters",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_b64encode_length_growth",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_b64decode_invalid_padding",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_b64decode_empty",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_b64decode_preserve_data",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_b64decode_with_whitespace",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_b64decode_special_characters",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "base64_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 0,
+    "output_path": "generated/main/base64_roundtrip__G4__gpt-4o__0.py",
+    "timestamp": 1779522301.216773,
+    "validation": {
+      "file_path": "generated/main/base64_roundtrip__G4__gpt-4o__0.py",
+      "syntactically_valid": true,
+      "num_properties": 8,
+      "num_passed": 7,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_base64_encode_padding",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "base64_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 1,
+    "output_path": "generated/main/base64_roundtrip__G4__gpt-4o__1.py",
+    "timestamp": 1779522307.652976,
+    "validation": {
+      "file_path": "generated/main/base64_roundtrip__G4__gpt-4o__1.py",
+      "syntactically_valid": true,
+      "num_properties": 10,
+      "num_passed": 6,
+      "num_failed": 4,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_b64encode_no_padding_odd_length_input",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_b64encode_padding_even_length_input",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_b64encode_padding_single_equal_sign",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_b64decode_mismatched_padding_error",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "base64_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 2,
+    "output_path": "generated/main/base64_roundtrip__G4__gpt-4o__2.py",
+    "timestamp": 1779522316.4643,
+    "validation": {
+      "file_path": "generated/main/base64_roundtrip__G4__gpt-4o__2.py",
+      "syntactically_valid": true,
+      "num_properties": 16,
+      "num_passed": 16,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "vacuous"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "base64_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/main/base64_roundtrip__F__gpt-4o-mini__0.py",
+    "timestamp": 1779522324.2817569,
+    "validation": {
+      "file_path": "generated/main/base64_roundtrip__F__gpt-4o-mini__0.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 4,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_encoding_empty_string",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_decoding_invalid_base64",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "base64_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/main/base64_roundtrip__F__gpt-4o-mini__1.py",
+    "timestamp": 1779522362.958525,
+    "validation": {
+      "file_path": "generated/main/base64_roundtrip__F__gpt-4o-mini__1.py",
+      "syntactically_valid": true,
+      "num_properties": 7,
+      "num_passed": 4,
+      "num_failed": 3,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_b64decode_invalid_padding",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_b64encode_empty_string",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_b64decode_invalid_input",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "base64_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 2,
+    "output_path": "generated/main/base64_roundtrip__F__gpt-4o-mini__2.py",
+    "timestamp": 1779522376.36898,
+    "validation": {
+      "file_path": "generated/main/base64_roundtrip__F__gpt-4o-mini__2.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 6,
+      "failures": [
+        {
+          "test_name": "import/collection",
+          "error_type": "CollectionError",
+          "error_message": "============================= test session starts ==============================\nplatform darwin -- Python 3.14.5, pytest-9.0.3, pluggy-1.6.0 -- /opt/homebrew/opt/python@3.14/bin/python3.14\nhypothesis profile 'default'\nrootdir: generated/main\nplugins: hypothesis-6.152.9, anyio-4.13.0\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n___________ ERROR collecting base64_rou"
+        }
+      ],
+      "classification": "errored"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "base64_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/main/base64_roundtrip__F__gpt-4o__0.py",
+    "timestamp": 1779522380.4394822,
+    "validation": {
+      "file_path": "generated/main/base64_roundtrip__F__gpt-4o__0.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 6,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "base64_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/main/base64_roundtrip__F__gpt-4o__1.py",
+    "timestamp": 1779522385.2672992,
+    "validation": {
+      "file_path": "generated/main/base64_roundtrip__F__gpt-4o__1.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 6,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "base64_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 2,
+    "output_path": "generated/main/base64_roundtrip__F__gpt-4o__2.py",
+    "timestamp": 1779522390.296554,
+    "validation": {
+      "file_path": "generated/main/base64_roundtrip__F__gpt-4o__2.py",
+      "syntactically_valid": true,
+      "num_properties": 7,
+      "num_passed": 6,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_b64encode_padding_needed",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "sorted_invariants",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 0,
+    "output_path": "generated/main/sorted_invariants__D__gpt-4o-mini__0.py",
+    "timestamp": 1779522395.209304,
+    "validation": {
+      "file_path": "generated/main/sorted_invariants__D__gpt-4o-mini__0.py",
+      "syntactically_valid": true,
+      "num_properties": 5,
+      "num_passed": 5,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "sorted_invariants",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 1,
+    "output_path": "generated/main/sorted_invariants__D__gpt-4o-mini__1.py",
+    "timestamp": 1779522402.3777332,
+    "validation": {
+      "file_path": "generated/main/sorted_invariants__D__gpt-4o-mini__1.py",
+      "syntactically_valid": true,
+      "num_properties": 3,
+      "num_passed": 2,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_sorted_floats_correctness",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "sorted_invariants",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 2,
+    "output_path": "generated/main/sorted_invariants__D__gpt-4o-mini__2.py",
+    "timestamp": 1779522410.284297,
+    "validation": {
+      "file_path": "generated/main/sorted_invariants__D__gpt-4o-mini__2.py",
+      "syntactically_valid": true,
+      "num_properties": 4,
+      "num_passed": 2,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_sorted_preserves_elements",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_sorted_single_element_cases",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "sorted_invariants",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 0,
+    "output_path": "generated/main/sorted_invariants__D__gpt-4o__0.py",
+    "timestamp": 1779522415.279308,
+    "validation": {
+      "file_path": "generated/main/sorted_invariants__D__gpt-4o__0.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 6,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "sorted_invariants",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 1,
+    "output_path": "generated/main/sorted_invariants__D__gpt-4o__1.py",
+    "timestamp": 1779522420.52895,
+    "validation": {
+      "file_path": "generated/main/sorted_invariants__D__gpt-4o__1.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 6,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "sorted_invariants",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 2,
+    "output_path": "generated/main/sorted_invariants__D__gpt-4o__2.py",
+    "timestamp": 1779522425.5224,
+    "validation": {
+      "file_path": "generated/main/sorted_invariants__D__gpt-4o__2.py",
+      "syntactically_valid": true,
+      "num_properties": 5,
+      "num_passed": 5,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "sorted_invariants",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/main/sorted_invariants__G3__gpt-4o-mini__0.py",
+    "timestamp": 1779522431.870249,
+    "validation": {
+      "file_path": "generated/main/sorted_invariants__G3__gpt-4o-mini__0.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 5,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_sorted_empty_list",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "sorted_invariants",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/main/sorted_invariants__G3__gpt-4o-mini__1.py",
+    "timestamp": 1779522439.858003,
+    "validation": {
+      "file_path": "generated/main/sorted_invariants__G3__gpt-4o-mini__1.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 5,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_sorted_key",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "sorted_invariants",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 2,
+    "output_path": "generated/main/sorted_invariants__G3__gpt-4o-mini__2.py",
+    "timestamp": 1779522455.725502,
+    "validation": {
+      "file_path": "generated/main/sorted_invariants__G3__gpt-4o-mini__2.py",
+      "syntactically_valid": true,
+      "num_properties": 7,
+      "num_passed": 5,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_sorted_empty",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_sorted_stability",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "sorted_invariants",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/main/sorted_invariants__G3__gpt-4o__0.py",
+    "timestamp": 1779522460.337597,
+    "validation": {
+      "file_path": "generated/main/sorted_invariants__G3__gpt-4o__0.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 6,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "sorted_invariants",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/main/sorted_invariants__G3__gpt-4o__1.py",
+    "timestamp": 1779522466.7816021,
+    "validation": {
+      "file_path": "generated/main/sorted_invariants__G3__gpt-4o__1.py",
+      "syntactically_valid": true,
+      "num_properties": 7,
+      "num_passed": 7,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "sorted_invariants",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 2,
+    "output_path": "generated/main/sorted_invariants__G3__gpt-4o__2.py",
+    "timestamp": 1779522475.952116,
+    "validation": {
+      "file_path": "generated/main/sorted_invariants__G3__gpt-4o__2.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 6,
+      "failures": [
+        {
+          "test_name": "import/collection",
+          "error_type": "CollectionError",
+          "error_message": "============================= test session starts ==============================\nplatform darwin -- Python 3.14.5, pytest-9.0.3, pluggy-1.6.0 -- /opt/homebrew/opt/python@3.14/bin/python3.14\nhypothesis profile 'default'\nrootdir: generated/main\nplugins: hypothesis-6.152.9, anyio-4.13.0\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n_____________ ERROR collecting sorted_i"
+        }
+      ],
+      "classification": "errored"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "sorted_invariants",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 0,
+    "output_path": "generated/main/sorted_invariants__G4__gpt-4o-mini__0.py",
+    "timestamp": 1779522486.238483,
+    "validation": {
+      "file_path": "generated/main/sorted_invariants__G4__gpt-4o-mini__0.py",
+      "syntactically_valid": true,
+      "num_properties": 9,
+      "num_passed": 8,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_sorted_empty_input",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "sorted_invariants",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 1,
+    "output_path": "generated/main/sorted_invariants__G4__gpt-4o-mini__1.py",
+    "timestamp": 1779522500.098614,
+    "validation": {
+      "file_path": "generated/main/sorted_invariants__G4__gpt-4o-mini__1.py",
+      "syntactically_valid": true,
+      "num_properties": 11,
+      "num_passed": 11,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "sorted_invariants",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 2,
+    "output_path": "generated/main/sorted_invariants__G4__gpt-4o-mini__2.py",
+    "timestamp": 1779522511.164791,
+    "validation": {
+      "file_path": "generated/main/sorted_invariants__G4__gpt-4o-mini__2.py",
+      "syntactically_valid": true,
+      "num_properties": 11,
+      "num_passed": 10,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_sorted_with_duplicates",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "sorted_invariants",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 0,
+    "output_path": "generated/main/sorted_invariants__G4__gpt-4o__0.py",
+    "timestamp": 1779522516.771838,
+    "validation": {
+      "file_path": "generated/main/sorted_invariants__G4__gpt-4o__0.py",
+      "syntactically_valid": true,
+      "num_properties": 8,
+      "num_passed": 7,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_sorted_empty_list",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "sorted_invariants",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 1,
+    "output_path": "generated/main/sorted_invariants__G4__gpt-4o__1.py",
+    "timestamp": 1779522522.1528478,
+    "validation": {
+      "file_path": "generated/main/sorted_invariants__G4__gpt-4o__1.py",
+      "syntactically_valid": true,
+      "num_properties": 8,
+      "num_passed": 6,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_sorted_empty_list",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_sorted_stability",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "sorted_invariants",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 2,
+    "output_path": "generated/main/sorted_invariants__G4__gpt-4o__2.py",
+    "timestamp": 1779522526.620331,
+    "validation": {
+      "file_path": "generated/main/sorted_invariants__G4__gpt-4o__2.py",
+      "syntactically_valid": true,
+      "num_properties": 8,
+      "num_passed": 8,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "sorted_invariants",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/main/sorted_invariants__F__gpt-4o-mini__0.py",
+    "timestamp": 1779522535.964316,
+    "validation": {
+      "file_path": "generated/main/sorted_invariants__F__gpt-4o-mini__0.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 5,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_sorted_reverse",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "sorted_invariants",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/main/sorted_invariants__F__gpt-4o-mini__1.py",
+    "timestamp": 1779522547.78663,
+    "validation": {
+      "file_path": "generated/main/sorted_invariants__F__gpt-4o-mini__1.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 6,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "sorted_invariants",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 2,
+    "output_path": "generated/main/sorted_invariants__F__gpt-4o-mini__2.py",
+    "timestamp": 1779522558.991012,
+    "validation": {
+      "file_path": "generated/main/sorted_invariants__F__gpt-4o-mini__2.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 5,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_sorted_empty",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "sorted_invariants",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/main/sorted_invariants__F__gpt-4o__0.py",
+    "timestamp": 1779522564.555276,
+    "validation": {
+      "file_path": "generated/main/sorted_invariants__F__gpt-4o__0.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 6,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "sorted_invariants",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/main/sorted_invariants__F__gpt-4o__1.py",
+    "timestamp": 1779522570.033686,
+    "validation": {
+      "file_path": "generated/main/sorted_invariants__F__gpt-4o__1.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 6,
+      "failures": [
+        {
+          "test_name": "import/collection",
+          "error_type": "CollectionError",
+          "error_message": "============================= test session starts ==============================\nplatform darwin -- Python 3.14.5, pytest-9.0.3, pluggy-1.6.0 -- /opt/homebrew/opt/python@3.14/bin/python3.14\nhypothesis profile 'default'\nrootdir: .\nconfigfile: pyproject.toml\nplugins: hypothesis-6.152.9, anyio-4.13.0\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n______ ERROR collecting gen"
+        }
+      ],
+      "classification": "errored"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "sorted_invariants",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 2,
+    "output_path": "generated/main/sorted_invariants__F__gpt-4o__2.py",
+    "timestamp": 1779522574.715158,
+    "validation": {
+      "file_path": "generated/main/sorted_invariants__F__gpt-4o__2.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 6,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "urllib_quote_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 0,
+    "output_path": "generated/main/urllib_quote_roundtrip__D__gpt-4o-mini__0.py",
+    "timestamp": 1779522616.697951,
+    "validation": {
+      "file_path": "generated/main/urllib_quote_roundtrip__D__gpt-4o-mini__0.py",
+      "syntactically_valid": true,
+      "num_properties": 5,
+      "num_passed": 3,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_quote_safe_string",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_quote_implies_non_empty",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "urllib_quote_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 1,
+    "output_path": "generated/main/urllib_quote_roundtrip__D__gpt-4o-mini__1.py",
+    "timestamp": 1779522625.231413,
+    "validation": {
+      "file_path": "generated/main/urllib_quote_roundtrip__D__gpt-4o-mini__1.py",
+      "syntactically_valid": true,
+      "num_properties": 5,
+      "num_passed": 5,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "urllib_quote_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 2,
+    "output_path": "generated/main/urllib_quote_roundtrip__D__gpt-4o-mini__2.py",
+    "timestamp": 1779522635.079872,
+    "validation": {
+      "file_path": "generated/main/urllib_quote_roundtrip__D__gpt-4o-mini__2.py",
+      "syntactically_valid": true,
+      "num_properties": 4,
+      "num_passed": 2,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_quote_safe_character",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_unquote_preserves_original_chars",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "urllib_quote_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 0,
+    "output_path": "generated/main/urllib_quote_roundtrip__D__gpt-4o__0.py",
+    "timestamp": 1779522640.250714,
+    "validation": {
+      "file_path": "generated/main/urllib_quote_roundtrip__D__gpt-4o__0.py",
+      "syntactically_valid": true,
+      "num_properties": 3,
+      "num_passed": 2,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_quote_idempotence",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "urllib_quote_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 1,
+    "output_path": "generated/main/urllib_quote_roundtrip__D__gpt-4o__1.py",
+    "timestamp": 1779522644.455603,
+    "validation": {
+      "file_path": "generated/main/urllib_quote_roundtrip__D__gpt-4o__1.py",
+      "syntactically_valid": true,
+      "num_properties": 3,
+      "num_passed": 2,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_quote_safe_characters",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "urllib_quote_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 2,
+    "output_path": "generated/main/urllib_quote_roundtrip__D__gpt-4o__2.py",
+    "timestamp": 1779522647.2597299,
+    "validation": {
+      "file_path": "generated/main/urllib_quote_roundtrip__D__gpt-4o__2.py",
+      "syntactically_valid": true,
+      "num_properties": 2,
+      "num_passed": 2,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "urllib_quote_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/main/urllib_quote_roundtrip__G3__gpt-4o-mini__0.py",
+    "timestamp": 1779522654.54552,
+    "validation": {
+      "file_path": "generated/main/urllib_quote_roundtrip__G3__gpt-4o-mini__0.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 3,
+      "num_failed": 3,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_quote_safe_characters",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_double_quote_unquote",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_quote_non_ascii_handles_unicode",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "urllib_quote_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/main/urllib_quote_roundtrip__G3__gpt-4o-mini__1.py",
+    "timestamp": 1779522662.225566,
+    "validation": {
+      "file_path": "generated/main/urllib_quote_roundtrip__G3__gpt-4o-mini__1.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 3,
+      "num_failed": 3,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_quote_no_special_characters",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_quote_safe_characters",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_unquote_encoded_characters",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "urllib_quote_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 2,
+    "output_path": "generated/main/urllib_quote_roundtrip__G3__gpt-4o-mini__2.py",
+    "timestamp": 1779522669.553639,
+    "validation": {
+      "file_path": "generated/main/urllib_quote_roundtrip__G3__gpt-4o-mini__2.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 6,
+      "failures": [
+        {
+          "test_name": "import/collection",
+          "error_type": "CollectionError",
+          "error_message": "============================= test session starts ==============================\nplatform darwin -- Python 3.14.5, pytest-9.0.3, pluggy-1.6.0 -- /opt/homebrew/opt/python@3.14/bin/python3.14\nhypothesis profile 'default'\nrootdir: .\nconfigfile: pyproject.toml\nplugins: hypothesis-6.152.9, anyio-4.13.0\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n_ ERROR collecting generate"
+        }
+      ],
+      "classification": "errored"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "urllib_quote_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/main/urllib_quote_roundtrip__G3__gpt-4o__0.py",
+    "timestamp": 1779522675.4254148,
+    "validation": {
+      "file_path": "generated/main/urllib_quote_roundtrip__G3__gpt-4o__0.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 4,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_quote_is_idempotent",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_preservation_of_safe_characters",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "urllib_quote_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/main/urllib_quote_roundtrip__G3__gpt-4o__1.py",
+    "timestamp": 1779522680.610083,
+    "validation": {
+      "file_path": "generated/main/urllib_quote_roundtrip__G3__gpt-4o__1.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 6,
+      "failures": [
+        {
+          "test_name": "import/collection",
+          "error_type": "CollectionError",
+          "error_message": "============================= test session starts ==============================\nplatform darwin -- Python 3.14.5, pytest-9.0.3, pluggy-1.6.0 -- /opt/homebrew/opt/python@3.14/bin/python3.14\nhypothesis profile 'default'\nrootdir: .\nconfigfile: pyproject.toml\nplugins: hypothesis-6.152.9, anyio-4.13.0\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n___ ERROR collecting genera"
+        }
+      ],
+      "classification": "errored"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "urllib_quote_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 2,
+    "output_path": "generated/main/urllib_quote_roundtrip__G3__gpt-4o__2.py",
+    "timestamp": 1779522685.724844,
+    "validation": {
+      "file_path": "generated/main/urllib_quote_roundtrip__G3__gpt-4o__2.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 4,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_unquote_removes_percent_encoding",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_quote_with_different_safe_characters",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "urllib_quote_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 0,
+    "output_path": "generated/main/urllib_quote_roundtrip__G4__gpt-4o-mini__0.py",
+    "timestamp": 1779522707.1746502,
+    "validation": {
+      "file_path": "generated/main/urllib_quote_roundtrip__G4__gpt-4o-mini__0.py",
+      "syntactically_valid": true,
+      "num_properties": 16,
+      "num_passed": 11,
+      "num_failed": 5,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_quote_with_safe_chars",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_quote_empty_string",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_quote_preserves_safe_characters",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_quote_multiple_calls",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_unquote_preserves_safe_characters",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "urllib_quote_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 1,
+    "output_path": "generated/main/urllib_quote_roundtrip__G4__gpt-4o-mini__1.py",
+    "timestamp": 1779522724.4145238,
+    "validation": {
+      "file_path": "generated/main/urllib_quote_roundtrip__G4__gpt-4o-mini__1.py",
+      "syntactically_valid": true,
+      "num_properties": 16,
+      "num_passed": 10,
+      "num_failed": 6,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_quote_single_character",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_quote_special_characters",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_quote_empty_string",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_unquote_identity",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_unquote_preserves_original_after_double_encoding",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_unquote_empty_string",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "urllib_quote_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 2,
+    "output_path": "generated/main/urllib_quote_roundtrip__G4__gpt-4o-mini__2.py",
+    "timestamp": 1779522741.0005279,
+    "validation": {
+      "file_path": "generated/main/urllib_quote_roundtrip__G4__gpt-4o-mini__2.py",
+      "syntactically_valid": true,
+      "num_properties": 16,
+      "num_passed": 10,
+      "num_failed": 6,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_quote_preserves_safe_characters",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_quote_produces_not_equal_to_input",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_quote_spaces",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_quote_special_character",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_quote_containing_colon",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_unquote_spaces",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "urllib_quote_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 0,
+    "output_path": "generated/main/urllib_quote_roundtrip__G4__gpt-4o__0.py",
+    "timestamp": 1779522753.562322,
+    "validation": {
+      "file_path": "generated/main/urllib_quote_roundtrip__G4__gpt-4o__0.py",
+      "syntactically_valid": true,
+      "num_properties": 16,
+      "num_passed": 10,
+      "num_failed": 6,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_quote_idempotence",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_quote_empty_string",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_quote_no_unnecessary_encoding",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_quote_special_characters",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_unquote_empty_string",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_unquote_percent_encoded_chars",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "urllib_quote_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 1,
+    "output_path": "generated/main/urllib_quote_roundtrip__G4__gpt-4o__1.py",
+    "timestamp": 1779522761.19941,
+    "validation": {
+      "file_path": "generated/main/urllib_quote_roundtrip__G4__gpt-4o__1.py",
+      "syntactically_valid": true,
+      "num_properties": 11,
+      "num_passed": 7,
+      "num_failed": 4,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_quote_non_alphanum",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_no_unquote_non_escape_sequences",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_unquote_specific_encoded_chars",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_unquote_incomplete_percent_encoding",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "urllib_quote_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 2,
+    "output_path": "generated/main/urllib_quote_roundtrip__G4__gpt-4o__2.py",
+    "timestamp": 1779522769.171885,
+    "validation": {
+      "file_path": "generated/main/urllib_quote_roundtrip__G4__gpt-4o__2.py",
+      "syntactically_valid": true,
+      "num_properties": 2,
+      "num_passed": 1,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_quote_full_property",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "urllib_quote_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/main/urllib_quote_roundtrip__F__gpt-4o-mini__0.py",
+    "timestamp": 1779522789.426635,
+    "validation": {
+      "file_path": "generated/main/urllib_quote_roundtrip__F__gpt-4o-mini__0.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 4,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_safe_characters",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_encoding_special_characters",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "urllib_quote_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/main/urllib_quote_roundtrip__F__gpt-4o-mini__1.py",
+    "timestamp": 1779522800.932629,
+    "validation": {
+      "file_path": "generated/main/urllib_quote_roundtrip__F__gpt-4o-mini__1.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 5,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_quote_safe_characters",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "urllib_quote_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 2,
+    "output_path": "generated/main/urllib_quote_roundtrip__F__gpt-4o-mini__2.py",
+    "timestamp": 1779522813.3087602,
+    "validation": {
+      "file_path": "generated/main/urllib_quote_roundtrip__F__gpt-4o-mini__2.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 6,
+      "failures": [
+        {
+          "test_name": "import/collection",
+          "error_type": "CollectionError",
+          "error_message": "============================= test session starts ==============================\nplatform darwin -- Python 3.14.5, pytest-9.0.3, pluggy-1.6.0 -- /opt/homebrew/opt/python@3.14/bin/python3.14\nhypothesis profile 'default'\nrootdir: .\nconfigfile: pyproject.toml\nplugins: hypothesis-6.152.9, anyio-4.13.0\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n_ ERROR collecting generate"
+        }
+      ],
+      "classification": "errored"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "urllib_quote_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/main/urllib_quote_roundtrip__F__gpt-4o__0.py",
+    "timestamp": 1779522818.533964,
+    "validation": {
+      "file_path": "generated/main/urllib_quote_roundtrip__F__gpt-4o__0.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 5,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_unquote_no_new_encoded_sequences",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "urllib_quote_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/main/urllib_quote_roundtrip__F__gpt-4o__1.py",
+    "timestamp": 1779522824.471516,
+    "validation": {
+      "file_path": "generated/main/urllib_quote_roundtrip__F__gpt-4o__1.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 4,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_quote_is_idempotent",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_non_safe_characters_percent_encoded",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "urllib_quote_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 2,
+    "output_path": "generated/main/urllib_quote_roundtrip__F__gpt-4o__2.py",
+    "timestamp": 1779522831.12683,
+    "validation": {
+      "file_path": "generated/main/urllib_quote_roundtrip__F__gpt-4o__2.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 6,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "vacuous"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "set_operations",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 0,
+    "output_path": "generated/main/set_operations__D__gpt-4o-mini__0.py",
+    "timestamp": 1779522838.9158,
+    "validation": {
+      "file_path": "generated/main/set_operations__D__gpt-4o-mini__0.py",
+      "syntactically_valid": true,
+      "num_properties": 2,
+      "num_passed": 2,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "set_operations",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 1,
+    "output_path": "generated/main/set_operations__D__gpt-4o-mini__1.py",
+    "timestamp": 1779522853.081262,
+    "validation": {
+      "file_path": "generated/main/set_operations__D__gpt-4o-mini__1.py",
+      "syntactically_valid": true,
+      "num_properties": 2,
+      "num_passed": 2,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "set_operations",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 2,
+    "output_path": "generated/main/set_operations__D__gpt-4o-mini__2.py",
+    "timestamp": 1779522861.262145,
+    "validation": {
+      "file_path": "generated/main/set_operations__D__gpt-4o-mini__2.py",
+      "syntactically_valid": true,
+      "num_properties": 2,
+      "num_passed": 2,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "set_operations",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 0,
+    "output_path": "generated/main/set_operations__D__gpt-4o__0.py",
+    "timestamp": 1779522866.865946,
+    "validation": {
+      "file_path": "generated/main/set_operations__D__gpt-4o__0.py",
+      "syntactically_valid": true,
+      "num_properties": 2,
+      "num_passed": 2,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "set_operations",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 1,
+    "output_path": "generated/main/set_operations__D__gpt-4o__1.py",
+    "timestamp": 1779522874.403082,
+    "validation": {
+      "file_path": "generated/main/set_operations__D__gpt-4o__1.py",
+      "syntactically_valid": true,
+      "num_properties": 8,
+      "num_passed": 8,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "set_operations",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 2,
+    "output_path": "generated/main/set_operations__D__gpt-4o__2.py",
+    "timestamp": 1779522881.612808,
+    "validation": {
+      "file_path": "generated/main/set_operations__D__gpt-4o__2.py",
+      "syntactically_valid": true,
+      "num_properties": 8,
+      "num_passed": 8,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "set_operations",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/main/set_operations__G3__gpt-4o-mini__0.py",
+    "timestamp": 1779522889.594956,
+    "validation": {
+      "file_path": "generated/main/set_operations__G3__gpt-4o-mini__0.py",
+      "syntactically_valid": true,
+      "num_properties": 10,
+      "num_passed": 10,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "set_operations",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/main/set_operations__G3__gpt-4o-mini__1.py",
+    "timestamp": 1779522903.3556979,
+    "validation": {
+      "file_path": "generated/main/set_operations__G3__gpt-4o-mini__1.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 3,
+      "num_failed": 3,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "TestSetOperations",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "TestSetOperations",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "TestSetOperations",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "set_operations",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 2,
+    "output_path": "generated/main/set_operations__G3__gpt-4o-mini__2.py",
+    "timestamp": 1779522917.755824,
+    "validation": {
+      "file_path": "generated/main/set_operations__G3__gpt-4o-mini__2.py",
+      "syntactically_valid": true,
+      "num_properties": 10,
+      "num_passed": 0,
+      "num_failed": 10,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_union_size",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_union_contains_elements",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_intersection_size",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_intersection_contains_elements",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_union_idempotency",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_intersection_idempotency",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_union_with_empty",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_intersection_with_empty",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_union_commutative",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_intersection_commutative",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "set_operations",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/main/set_operations__G3__gpt-4o__0.py",
+    "timestamp": 1779522922.858688,
+    "validation": {
+      "file_path": "generated/main/set_operations__G3__gpt-4o__0.py",
+      "syntactically_valid": true,
+      "num_properties": 2,
+      "num_passed": 2,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "set_operations",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/main/set_operations__G3__gpt-4o__1.py",
+    "timestamp": 1779522929.152331,
+    "validation": {
+      "file_path": "generated/main/set_operations__G3__gpt-4o__1.py",
+      "syntactically_valid": true,
+      "num_properties": 11,
+      "num_passed": 11,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "set_operations",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 2,
+    "output_path": "generated/main/set_operations__G3__gpt-4o__2.py",
+    "timestamp": 1779522935.125395,
+    "validation": {
+      "file_path": "generated/main/set_operations__G3__gpt-4o__2.py",
+      "syntactically_valid": true,
+      "num_properties": 12,
+      "num_passed": 12,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "set_operations",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 0,
+    "output_path": "generated/main/set_operations__G4__gpt-4o-mini__0.py",
+    "timestamp": 1779522951.959914,
+    "validation": {
+      "file_path": "generated/main/set_operations__G4__gpt-4o-mini__0.py",
+      "syntactically_valid": true,
+      "num_properties": 2,
+      "num_passed": 2,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "set_operations",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 1,
+    "output_path": "generated/main/set_operations__G4__gpt-4o-mini__1.py",
+    "timestamp": 1779522965.5014641,
+    "validation": {
+      "file_path": "generated/main/set_operations__G4__gpt-4o-mini__1.py",
+      "syntactically_valid": true,
+      "num_properties": 2,
+      "num_passed": 2,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "set_operations",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 2,
+    "output_path": "generated/main/set_operations__G4__gpt-4o-mini__2.py",
+    "timestamp": 1779522985.654144,
+    "validation": {
+      "file_path": "generated/main/set_operations__G4__gpt-4o-mini__2.py",
+      "syntactically_valid": true,
+      "num_properties": 16,
+      "num_passed": 12,
+      "num_failed": 2,
+      "num_errored": 5,
+      "failures": [
+        {
+          "test_name": "test_union_empty_sets",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_intersection_empty_sets",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "set_operations",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 0,
+    "output_path": "generated/main/set_operations__G4__gpt-4o__0.py",
+    "timestamp": 1779522992.922476,
+    "validation": {
+      "file_path": "generated/main/set_operations__G4__gpt-4o__0.py",
+      "syntactically_valid": true,
+      "num_properties": 16,
+      "num_passed": 15,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_intersection_with_universal",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "set_operations",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 1,
+    "output_path": "generated/main/set_operations__G4__gpt-4o__1.py",
+    "timestamp": 1779523001.9754639,
+    "validation": {
+      "file_path": "generated/main/set_operations__G4__gpt-4o__1.py",
+      "syntactically_valid": true,
+      "num_properties": 16,
+      "num_passed": 16,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "set_operations",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 2,
+    "output_path": "generated/main/set_operations__G4__gpt-4o__2.py",
+    "timestamp": 1779523012.165882,
+    "validation": {
+      "file_path": "generated/main/set_operations__G4__gpt-4o__2.py",
+      "syntactically_valid": true,
+      "num_properties": 16,
+      "num_passed": 16,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "set_operations",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/main/set_operations__F__gpt-4o-mini__0.py",
+    "timestamp": 1779523032.948928,
+    "validation": {
+      "file_path": "generated/main/set_operations__F__gpt-4o-mini__0.py",
+      "syntactically_valid": true,
+      "num_properties": 9,
+      "num_passed": 5,
+      "num_failed": 1,
+      "num_errored": 7,
+      "failures": [
+        {
+          "test_name": "test_intersection_identity_property",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "set_operations",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/main/set_operations__F__gpt-4o-mini__1.py",
+    "timestamp": 1779523045.5047371,
+    "validation": {
+      "file_path": "generated/main/set_operations__F__gpt-4o-mini__1.py",
+      "syntactically_valid": true,
+      "num_properties": 8,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 8,
+      "failures": [
+        {
+          "test_name": "import/collection",
+          "error_type": "CollectionError",
+          "error_message": "============================= test session starts ==============================\nplatform darwin -- Python 3.14.5, pytest-9.0.3, pluggy-1.6.0 -- /opt/homebrew/opt/python@3.14/bin/python3.14\nhypothesis profile 'default'\nrootdir: .\nconfigfile: pyproject.toml\nplugins: hypothesis-6.152.9, anyio-4.13.0\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n_____ ERROR collecting gene"
+        }
+      ],
+      "classification": "errored"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "set_operations",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 2,
+    "output_path": "generated/main/set_operations__F__gpt-4o-mini__2.py",
+    "timestamp": 1779523060.493943,
+    "validation": {
+      "file_path": "generated/main/set_operations__F__gpt-4o-mini__2.py",
+      "syntactically_valid": true,
+      "num_properties": 8,
+      "num_passed": 7,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_intersection_with_empty",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "set_operations",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/main/set_operations__F__gpt-4o__0.py",
+    "timestamp": 1779523066.914461,
+    "validation": {
+      "file_path": "generated/main/set_operations__F__gpt-4o__0.py",
+      "syntactically_valid": true,
+      "num_properties": 10,
+      "num_passed": 8,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_union_with_self_is_self",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_intersection_with_self_is_self",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "set_operations",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/main/set_operations__F__gpt-4o__1.py",
+    "timestamp": 1779523071.459114,
+    "validation": {
+      "file_path": "generated/main/set_operations__F__gpt-4o__1.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 6,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "set_operations",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 2,
+    "output_path": "generated/main/set_operations__F__gpt-4o__2.py",
+    "timestamp": 1779523077.8066869,
+    "validation": {
+      "file_path": "generated/main/set_operations__F__gpt-4o__2.py",
+      "syntactically_valid": true,
+      "num_properties": 8,
+      "num_passed": 6,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_union_with_superset_yields_superset",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_intersection_with_subset_yields_subset",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 3,
+    "output_path": "generated/extra/gpt4o_mini_extra/json_roundtrip__D__gpt-4o-mini__3.py",
+    "timestamp": 1779523276.358289,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/json_roundtrip__D__gpt-4o-mini__3.py",
+      "syntactically_valid": true,
+      "num_properties": 2,
+      "num_passed": 0,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_json_serialization",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_json_round_trip",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 4,
+    "output_path": "generated/extra/gpt4o_mini_extra/json_roundtrip__D__gpt-4o-mini__4.py",
+    "timestamp": 1779523285.777375,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/json_roundtrip__D__gpt-4o-mini__4.py",
+      "syntactically_valid": true,
+      "num_properties": 3,
+      "num_passed": 2,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_json_lists_round_trip",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 5,
+    "output_path": "generated/extra/gpt4o_mini_extra/json_roundtrip__D__gpt-4o-mini__5.py",
+    "timestamp": 1779523298.367017,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/json_roundtrip__D__gpt-4o-mini__5.py",
+      "syntactically_valid": true,
+      "num_properties": 4,
+      "num_passed": 0,
+      "num_failed": 4,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_json_round_trip",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_json_serialization_deserialization",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_nested_dictionaries",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_nested_lists_of_dictionaries",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 3,
+    "output_path": "generated/extra/gpt4o_mini_extra/json_roundtrip__G3__gpt-4o-mini__3.py",
+    "timestamp": 1779523312.3268611,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/json_roundtrip__G3__gpt-4o-mini__3.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 6,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 4,
+    "output_path": "generated/extra/gpt4o_mini_extra/json_roundtrip__G3__gpt-4o-mini__4.py",
+    "timestamp": 1779523328.593259,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/json_roundtrip__G3__gpt-4o-mini__4.py",
+      "syntactically_valid": true,
+      "num_properties": 7,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 7,
+      "failures": [
+        {
+          "test_name": "import/collection",
+          "error_type": "CollectionError",
+          "error_message": "============================= test session starts ==============================\nplatform darwin -- Python 3.14.5, pytest-9.0.3, pluggy-1.6.0 -- /opt/homebrew/opt/python@3.14/bin/python3.14\nhypothesis profile 'default'\nrootdir: .\nconfigfile: pyproject.toml\nplugins: hypothesis-6.152.9, anyio-4.13.0\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n_ ERROR collecting generate"
+        }
+      ],
+      "classification": "errored"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 5,
+    "output_path": "generated/extra/gpt4o_mini_extra/json_roundtrip__G3__gpt-4o-mini__5.py",
+    "timestamp": 1779523342.198773,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/json_roundtrip__G3__gpt-4o-mini__5.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 4,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_serialize_deserialize",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_type_consistency",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "base64_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 3,
+    "output_path": "generated/extra/gpt4o_mini_extra/base64_roundtrip__D__gpt-4o-mini__3.py",
+    "timestamp": 1779523353.418518,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/base64_roundtrip__D__gpt-4o-mini__3.py",
+      "syntactically_valid": true,
+      "num_properties": 4,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 4,
+      "failures": [
+        {
+          "test_name": "import/collection",
+          "error_type": "CollectionError",
+          "error_message": "============================= test session starts ==============================\nplatform darwin -- Python 3.14.5, pytest-9.0.3, pluggy-1.6.0 -- /opt/homebrew/opt/python@3.14/bin/python3.14\nhypothesis profile 'default'\nrootdir: .\nconfigfile: pyproject.toml\nplugins: hypothesis-6.152.9, anyio-4.13.0\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n_ ERROR collecting generate"
+        }
+      ],
+      "classification": "errored"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "base64_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 4,
+    "output_path": "generated/extra/gpt4o_mini_extra/base64_roundtrip__D__gpt-4o-mini__4.py",
+    "timestamp": 1779523361.9412968,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/base64_roundtrip__D__gpt-4o-mini__4.py",
+      "syntactically_valid": true,
+      "num_properties": 5,
+      "num_passed": 4,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_b64decode_invalid_input",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "base64_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 5,
+    "output_path": "generated/extra/gpt4o_mini_extra/base64_roundtrip__D__gpt-4o-mini__5.py",
+    "timestamp": 1779523375.2719429,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/base64_roundtrip__D__gpt-4o-mini__5.py",
+      "syntactically_valid": true,
+      "num_properties": 4,
+      "num_passed": 4,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "vacuous"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "base64_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 3,
+    "output_path": "generated/extra/gpt4o_mini_extra/base64_roundtrip__G3__gpt-4o-mini__3.py",
+    "timestamp": 1779523387.660716,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/base64_roundtrip__G3__gpt-4o-mini__3.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 5,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_decode_invalid_base64_string",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "base64_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 4,
+    "output_path": "generated/extra/gpt4o_mini_extra/base64_roundtrip__G3__gpt-4o-mini__4.py",
+    "timestamp": 1779523399.8801181,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/base64_roundtrip__G3__gpt-4o-mini__4.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 5,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_decode_invalid_base64_raises_type_error",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "base64_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 5,
+    "output_path": "generated/extra/gpt4o_mini_extra/base64_roundtrip__G3__gpt-4o-mini__5.py",
+    "timestamp": 1779523411.0808399,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/base64_roundtrip__G3__gpt-4o-mini__5.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 5,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_b64decode_of_invalid_string_raises_exception",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "sorted_invariants",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 3,
+    "output_path": "generated/extra/gpt4o_mini_extra/sorted_invariants__D__gpt-4o-mini__3.py",
+    "timestamp": 1779523416.8444889,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/sorted_invariants__D__gpt-4o-mini__3.py",
+      "syntactically_valid": true,
+      "num_properties": 3,
+      "num_passed": 3,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "sorted_invariants",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 4,
+    "output_path": "generated/extra/gpt4o_mini_extra/sorted_invariants__D__gpt-4o-mini__4.py",
+    "timestamp": 1779523424.7329018,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/sorted_invariants__D__gpt-4o-mini__4.py",
+      "syntactically_valid": true,
+      "num_properties": 3,
+      "num_passed": 2,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_sorted_floats",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "sorted_invariants",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 5,
+    "output_path": "generated/extra/gpt4o_mini_extra/sorted_invariants__D__gpt-4o-mini__5.py",
+    "timestamp": 1779523433.295747,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/sorted_invariants__D__gpt-4o-mini__5.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 6,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "sorted_invariants",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 3,
+    "output_path": "generated/extra/gpt4o_mini_extra/sorted_invariants__G3__gpt-4o-mini__3.py",
+    "timestamp": 1779523443.243072,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/sorted_invariants__G3__gpt-4o-mini__3.py",
+      "syntactically_valid": true,
+      "num_properties": 7,
+      "num_passed": 5,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_sorted_same_elements",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_sorted_empty",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "sorted_invariants",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 4,
+    "output_path": "generated/extra/gpt4o_mini_extra/sorted_invariants__G3__gpt-4o-mini__4.py",
+    "timestamp": 1779523453.09542,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/sorted_invariants__G3__gpt-4o-mini__4.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 5,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_sorted_empty",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "sorted_invariants",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 5,
+    "output_path": "generated/extra/gpt4o_mini_extra/sorted_invariants__G3__gpt-4o-mini__5.py",
+    "timestamp": 1779523462.9829671,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/sorted_invariants__G3__gpt-4o-mini__5.py",
+      "syntactically_valid": true,
+      "num_properties": 7,
+      "num_passed": 5,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_sorted_elements",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_sorted_empty",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "urllib_quote_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 3,
+    "output_path": "generated/extra/gpt4o_mini_extra/urllib_quote_roundtrip__D__gpt-4o-mini__3.py",
+    "timestamp": 1779523473.066901,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/urllib_quote_roundtrip__D__gpt-4o-mini__3.py",
+      "syntactically_valid": true,
+      "num_properties": 4,
+      "num_passed": 4,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "urllib_quote_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 4,
+    "output_path": "generated/extra/gpt4o_mini_extra/urllib_quote_roundtrip__D__gpt-4o-mini__4.py",
+    "timestamp": 1779523479.993991,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/urllib_quote_roundtrip__D__gpt-4o-mini__4.py",
+      "syntactically_valid": true,
+      "num_properties": 5,
+      "num_passed": 2,
+      "num_failed": 3,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_unquote_quote_round_trip",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_quote_preserves_non_safe_characters",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_quote_does_not_alter_string_length",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "urllib_quote_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 5,
+    "output_path": "generated/extra/gpt4o_mini_extra/urllib_quote_roundtrip__D__gpt-4o-mini__5.py",
+    "timestamp": 1779523486.942646,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/urllib_quote_roundtrip__D__gpt-4o-mini__5.py",
+      "syntactically_valid": true,
+      "num_properties": 4,
+      "num_passed": 2,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_unquote_quote_round_trip",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_quote_invariance",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "urllib_quote_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 3,
+    "output_path": "generated/extra/gpt4o_mini_extra/urllib_quote_roundtrip__G3__gpt-4o-mini__3.py",
+    "timestamp": 1779523496.3085692,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/urllib_quote_roundtrip__G3__gpt-4o-mini__3.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 6,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "urllib_quote_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 4,
+    "output_path": "generated/extra/gpt4o_mini_extra/urllib_quote_roundtrip__G3__gpt-4o-mini__4.py",
+    "timestamp": 1779523504.211783,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/urllib_quote_roundtrip__G3__gpt-4o-mini__4.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 4,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_quote_safe_characters",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_quote_no_double_encoding",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "urllib_quote_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 5,
+    "output_path": "generated/extra/gpt4o_mini_extra/urllib_quote_roundtrip__G3__gpt-4o-mini__5.py",
+    "timestamp": 1779523518.735021,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/urllib_quote_roundtrip__G3__gpt-4o-mini__5.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 6,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "set_operations",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 3,
+    "output_path": "generated/extra/gpt4o_mini_extra/set_operations__D__gpt-4o-mini__3.py",
+    "timestamp": 1779523527.3439791,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/set_operations__D__gpt-4o-mini__3.py",
+      "syntactically_valid": true,
+      "num_properties": 8,
+      "num_passed": 6,
+      "num_failed": 0,
+      "num_errored": 5,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "set_operations",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 4,
+    "output_path": "generated/extra/gpt4o_mini_extra/set_operations__D__gpt-4o-mini__4.py",
+    "timestamp": 1779523537.844505,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/set_operations__D__gpt-4o-mini__4.py",
+      "syntactically_valid": true,
+      "num_properties": 7,
+      "num_passed": 4,
+      "num_failed": 3,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_set_union_associative",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_set_intersection_associative",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_union_and_intersection_identity",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "set_operations",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 5,
+    "output_path": "generated/extra/gpt4o_mini_extra/set_operations__D__gpt-4o-mini__5.py",
+    "timestamp": 1779523548.530328,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/set_operations__D__gpt-4o-mini__5.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 4,
+      "num_failed": 0,
+      "num_errored": 5,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "set_operations",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 3,
+    "output_path": "generated/extra/gpt4o_mini_extra/set_operations__G3__gpt-4o-mini__3.py",
+    "timestamp": 1779523559.709077,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/set_operations__G3__gpt-4o-mini__3.py",
+      "syntactically_valid": true,
+      "num_properties": 8,
+      "num_passed": 5,
+      "num_failed": 1,
+      "num_errored": 5,
+      "failures": [
+        {
+          "test_name": "test_intersection_id_identity",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "set_operations",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 4,
+    "output_path": "generated/extra/gpt4o_mini_extra/set_operations__G3__gpt-4o-mini__4.py",
+    "timestamp": 1779523575.000854,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/set_operations__G3__gpt-4o-mini__4.py",
+      "syntactically_valid": true,
+      "num_properties": 10,
+      "num_passed": 10,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "set_operations",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 5,
+    "output_path": "generated/extra/gpt4o_mini_extra/set_operations__G3__gpt-4o-mini__5.py",
+    "timestamp": 1779523587.931273,
+    "validation": {
+      "file_path": "generated/extra/gpt4o_mini_extra/set_operations__G3__gpt-4o-mini__5.py",
+      "syntactically_valid": true,
+      "num_properties": 8,
+      "num_passed": 5,
+      "num_failed": 1,
+      "num_errored": 5,
+      "failures": [
+        {
+          "test_name": "test_intersection_identity",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "function": "json_roundtrip",
+    "condition": "D",
+    "model": "claude-sonnet",
+    "epoch": 0,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "json_roundtrip",
+    "condition": "D",
+    "model": "claude-sonnet",
+    "epoch": 1,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "json_roundtrip",
+    "condition": "G3",
+    "model": "claude-sonnet",
+    "epoch": 0,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "json_roundtrip",
+    "condition": "G3",
+    "model": "claude-sonnet",
+    "epoch": 1,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "json_roundtrip",
+    "condition": "G4",
+    "model": "claude-sonnet",
+    "epoch": 0,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "json_roundtrip",
+    "condition": "G4",
+    "model": "claude-sonnet",
+    "epoch": 1,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "json_roundtrip",
+    "condition": "F",
+    "model": "claude-sonnet",
+    "epoch": 0,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "json_roundtrip",
+    "condition": "F",
+    "model": "claude-sonnet",
+    "epoch": 1,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "base64_roundtrip",
+    "condition": "D",
+    "model": "claude-sonnet",
+    "epoch": 0,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "base64_roundtrip",
+    "condition": "D",
+    "model": "claude-sonnet",
+    "epoch": 1,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "base64_roundtrip",
+    "condition": "G3",
+    "model": "claude-sonnet",
+    "epoch": 0,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "base64_roundtrip",
+    "condition": "G3",
+    "model": "claude-sonnet",
+    "epoch": 1,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "base64_roundtrip",
+    "condition": "G4",
+    "model": "claude-sonnet",
+    "epoch": 0,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "base64_roundtrip",
+    "condition": "G4",
+    "model": "claude-sonnet",
+    "epoch": 1,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "base64_roundtrip",
+    "condition": "F",
+    "model": "claude-sonnet",
+    "epoch": 0,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "base64_roundtrip",
+    "condition": "F",
+    "model": "claude-sonnet",
+    "epoch": 1,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "sorted_invariants",
+    "condition": "D",
+    "model": "claude-sonnet",
+    "epoch": 0,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "sorted_invariants",
+    "condition": "D",
+    "model": "claude-sonnet",
+    "epoch": 1,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "sorted_invariants",
+    "condition": "G3",
+    "model": "claude-sonnet",
+    "epoch": 0,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "sorted_invariants",
+    "condition": "G3",
+    "model": "claude-sonnet",
+    "epoch": 1,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "sorted_invariants",
+    "condition": "G4",
+    "model": "claude-sonnet",
+    "epoch": 0,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "sorted_invariants",
+    "condition": "G4",
+    "model": "claude-sonnet",
+    "epoch": 1,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "sorted_invariants",
+    "condition": "F",
+    "model": "claude-sonnet",
+    "epoch": 0,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "sorted_invariants",
+    "condition": "F",
+    "model": "claude-sonnet",
+    "epoch": 1,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "urllib_quote_roundtrip",
+    "condition": "D",
+    "model": "claude-sonnet",
+    "epoch": 0,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "urllib_quote_roundtrip",
+    "condition": "D",
+    "model": "claude-sonnet",
+    "epoch": 1,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "urllib_quote_roundtrip",
+    "condition": "G3",
+    "model": "claude-sonnet",
+    "epoch": 0,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "urllib_quote_roundtrip",
+    "condition": "G3",
+    "model": "claude-sonnet",
+    "epoch": 1,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "urllib_quote_roundtrip",
+    "condition": "G4",
+    "model": "claude-sonnet",
+    "epoch": 0,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "urllib_quote_roundtrip",
+    "condition": "G4",
+    "model": "claude-sonnet",
+    "epoch": 1,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "urllib_quote_roundtrip",
+    "condition": "F",
+    "model": "claude-sonnet",
+    "epoch": 0,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "urllib_quote_roundtrip",
+    "condition": "F",
+    "model": "claude-sonnet",
+    "epoch": 1,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "set_operations",
+    "condition": "D",
+    "model": "claude-sonnet",
+    "epoch": 0,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "set_operations",
+    "condition": "D",
+    "model": "claude-sonnet",
+    "epoch": 1,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "set_operations",
+    "condition": "G3",
+    "model": "claude-sonnet",
+    "epoch": 0,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "set_operations",
+    "condition": "G3",
+    "model": "claude-sonnet",
+    "epoch": 1,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "set_operations",
+    "condition": "G4",
+    "model": "claude-sonnet",
+    "epoch": 0,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "set_operations",
+    "condition": "G4",
+    "model": "claude-sonnet",
+    "epoch": 1,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "set_operations",
+    "condition": "F",
+    "model": "claude-sonnet",
+    "epoch": 0,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  },
+  {
+    "function": "set_operations",
+    "condition": "F",
+    "model": "claude-sonnet",
+    "epoch": 1,
+    "error": "Error code: 400 - {'error': {'message': 'anthropic/claude-sonnet-4-20250514 is not a valid model ID', 'code': 400}, 'user_id': 'user_3Czx2D2wI2YEDNZLcrAPpLPsCOl'}"
+  }
+]
