@@ -1,0 +1,30 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.egg-info/
+*.pyc
+dist/
+build/
+
+# Generated spec files (too large for git, reproduce via run_experiment.py)
+generated/
+
+# Test caches
+.pytest_cache/
+.hypothesis/
+
+# IDE
+.vscode/
+.idea/
+
+# Internal strategy docs (not for public repo)
+context/
+IMPLEMENTATION.md
+
+# OS
+.DS_Store
+
+# Claude Code
+.claude/

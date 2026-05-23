@@ -1,0 +1,980 @@
+[
+  {
+    "model": "claude-sonnet-4",
+    "function": "json_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 0,
+    "output_path": "generated/claude/json_roundtrip__D__anthropic_claude-sonnet-4__0.py",
+    "timestamp": 1779523775.3372679,
+    "validation": {
+      "file_path": "generated/claude/json_roundtrip__D__anthropic_claude-sonnet-4__0.py",
+      "syntactically_valid": true,
+      "num_properties": 11,
+      "num_passed": 11,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "json_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 1,
+    "output_path": "generated/claude/json_roundtrip__D__anthropic_claude-sonnet-4__1.py",
+    "timestamp": 1779523788.102679,
+    "validation": {
+      "file_path": "generated/claude/json_roundtrip__D__anthropic_claude-sonnet-4__1.py",
+      "syntactically_valid": true,
+      "num_properties": 11,
+      "num_passed": 11,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "json_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/claude/json_roundtrip__G3__anthropic_claude-sonnet-4__0.py",
+    "timestamp": 1779523808.56223,
+    "validation": {
+      "file_path": "generated/claude/json_roundtrip__G3__anthropic_claude-sonnet-4__0.py",
+      "syntactically_valid": true,
+      "num_properties": 10,
+      "num_passed": 10,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "json_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/claude/json_roundtrip__G3__anthropic_claude-sonnet-4__1.py",
+    "timestamp": 1779523843.040441,
+    "validation": {
+      "file_path": "generated/claude/json_roundtrip__G3__anthropic_claude-sonnet-4__1.py",
+      "syntactically_valid": true,
+      "num_properties": 12,
+      "num_passed": 12,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "json_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 0,
+    "output_path": "generated/claude/json_roundtrip__G4__anthropic_claude-sonnet-4__0.py",
+    "timestamp": 1779523886.8130088,
+    "validation": {
+      "file_path": "generated/claude/json_roundtrip__G4__anthropic_claude-sonnet-4__0.py",
+      "syntactically_valid": true,
+      "num_properties": 22,
+      "num_passed": 18,
+      "num_failed": 4,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_dumps_rejects_non_serializable",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_dumps_rejects_nan_infinity_by_default",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_loads_float_strings",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_loads_rejects_invalid_json",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "json_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 1,
+    "output_path": "generated/claude/json_roundtrip__G4__anthropic_claude-sonnet-4__1.py",
+    "timestamp": 1779523908.71002,
+    "validation": {
+      "file_path": "generated/claude/json_roundtrip__G4__anthropic_claude-sonnet-4__1.py",
+      "syntactically_valid": true,
+      "num_properties": 24,
+      "num_passed": 23,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_loads_quoted_string",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "json_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/claude/json_roundtrip__F__anthropic_claude-sonnet-4__0.py",
+    "timestamp": 1779523932.1232781,
+    "validation": {
+      "file_path": "generated/claude/json_roundtrip__F__anthropic_claude-sonnet-4__0.py",
+      "syntactically_valid": true,
+      "num_properties": 10,
+      "num_passed": 10,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "json_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/claude/json_roundtrip__F__anthropic_claude-sonnet-4__1.py",
+    "timestamp": 1779523975.663264,
+    "validation": {
+      "file_path": "generated/claude/json_roundtrip__F__anthropic_claude-sonnet-4__1.py",
+      "syntactically_valid": true,
+      "num_properties": 10,
+      "num_passed": 10,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "base64_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 0,
+    "output_path": "generated/claude/base64_roundtrip__D__anthropic_claude-sonnet-4__0.py",
+    "timestamp": 1779523992.557363,
+    "validation": {
+      "file_path": "generated/claude/base64_roundtrip__D__anthropic_claude-sonnet-4__0.py",
+      "syntactically_valid": true,
+      "num_properties": 10,
+      "num_passed": 10,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "base64_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 1,
+    "output_path": "generated/claude/base64_roundtrip__D__anthropic_claude-sonnet-4__1.py",
+    "timestamp": 1779524003.273796,
+    "validation": {
+      "file_path": "generated/claude/base64_roundtrip__D__anthropic_claude-sonnet-4__1.py",
+      "syntactically_valid": true,
+      "num_properties": 9,
+      "num_passed": 9,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "base64_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/claude/base64_roundtrip__G3__anthropic_claude-sonnet-4__0.py",
+    "timestamp": 1779524018.877246,
+    "validation": {
+      "file_path": "generated/claude/base64_roundtrip__G3__anthropic_claude-sonnet-4__0.py",
+      "syntactically_valid": true,
+      "num_properties": 10,
+      "num_passed": 9,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_valid_base64_decodes_successfully",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "base64_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/claude/base64_roundtrip__G3__anthropic_claude-sonnet-4__1.py",
+    "timestamp": 1779524035.3206248,
+    "validation": {
+      "file_path": "generated/claude/base64_roundtrip__G3__anthropic_claude-sonnet-4__1.py",
+      "syntactically_valid": true,
+      "num_properties": 10,
+      "num_passed": 9,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_decode_invalid_input_fails",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "base64_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 0,
+    "output_path": "generated/claude/base64_roundtrip__G4__anthropic_claude-sonnet-4__0.py",
+    "timestamp": 1779524064.395797,
+    "validation": {
+      "file_path": "generated/claude/base64_roundtrip__G4__anthropic_claude-sonnet-4__0.py",
+      "syntactically_valid": true,
+      "num_properties": 21,
+      "num_passed": 19,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "TestBase64Decode",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "TestBase64Decode",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "base64_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 1,
+    "output_path": "generated/claude/base64_roundtrip__G4__anthropic_claude-sonnet-4__1.py",
+    "timestamp": 1779524089.38196,
+    "validation": {
+      "file_path": "generated/claude/base64_roundtrip__G4__anthropic_claude-sonnet-4__1.py",
+      "syntactically_valid": true,
+      "num_properties": 24,
+      "num_passed": 20,
+      "num_failed": 4,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_b64decode_invalid_length_raises_error",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_b64decode_string_input_raises_error",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_b64decode_invalid_characters_handling",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_b64decode_only_padding_raises_error",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "base64_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/claude/base64_roundtrip__F__anthropic_claude-sonnet-4__0.py",
+    "timestamp": 1779524107.8579588,
+    "validation": {
+      "file_path": "generated/claude/base64_roundtrip__F__anthropic_claude-sonnet-4__0.py",
+      "syntactically_valid": true,
+      "num_properties": 10,
+      "num_passed": 10,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "base64_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/claude/base64_roundtrip__F__anthropic_claude-sonnet-4__1.py",
+    "timestamp": 1779524121.032504,
+    "validation": {
+      "file_path": "generated/claude/base64_roundtrip__F__anthropic_claude-sonnet-4__1.py",
+      "syntactically_valid": true,
+      "num_properties": 10,
+      "num_passed": 10,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "sorted_invariants",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 0,
+    "output_path": "generated/claude/sorted_invariants__D__anthropic_claude-sonnet-4__0.py",
+    "timestamp": 1779524135.197332,
+    "validation": {
+      "file_path": "generated/claude/sorted_invariants__D__anthropic_claude-sonnet-4__0.py",
+      "syntactically_valid": true,
+      "num_properties": 13,
+      "num_passed": 13,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "sorted_invariants",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 1,
+    "output_path": "generated/claude/sorted_invariants__D__anthropic_claude-sonnet-4__1.py",
+    "timestamp": 1779524144.9343748,
+    "validation": {
+      "file_path": "generated/claude/sorted_invariants__D__anthropic_claude-sonnet-4__1.py",
+      "syntactically_valid": true,
+      "num_properties": 10,
+      "num_passed": 10,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "sorted_invariants",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/claude/sorted_invariants__G3__anthropic_claude-sonnet-4__0.py",
+    "timestamp": 1779524160.392713,
+    "validation": {
+      "file_path": "generated/claude/sorted_invariants__G3__anthropic_claude-sonnet-4__0.py",
+      "syntactically_valid": true,
+      "num_properties": 12,
+      "num_passed": 12,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "sorted_invariants",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/claude/sorted_invariants__G3__anthropic_claude-sonnet-4__1.py",
+    "timestamp": 1779524180.562243,
+    "validation": {
+      "file_path": "generated/claude/sorted_invariants__G3__anthropic_claude-sonnet-4__1.py",
+      "syntactically_valid": true,
+      "num_properties": 14,
+      "num_passed": 14,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "sorted_invariants",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 0,
+    "output_path": "generated/claude/sorted_invariants__G4__anthropic_claude-sonnet-4__0.py",
+    "timestamp": 1779524204.951047,
+    "validation": {
+      "file_path": "generated/claude/sorted_invariants__G4__anthropic_claude-sonnet-4__0.py",
+      "syntactically_valid": true,
+      "num_properties": 16,
+      "num_passed": 16,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "sorted_invariants",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 1,
+    "output_path": "generated/claude/sorted_invariants__G4__anthropic_claude-sonnet-4__1.py",
+    "timestamp": 1779524235.679147,
+    "validation": {
+      "file_path": "generated/claude/sorted_invariants__G4__anthropic_claude-sonnet-4__1.py",
+      "syntactically_valid": true,
+      "num_properties": 25,
+      "num_passed": 0,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_sorted_properties",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "sorted_invariants",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/claude/sorted_invariants__F__anthropic_claude-sonnet-4__0.py",
+    "timestamp": 1779524252.5525372,
+    "validation": {
+      "file_path": "generated/claude/sorted_invariants__F__anthropic_claude-sonnet-4__0.py",
+      "syntactically_valid": true,
+      "num_properties": 12,
+      "num_passed": 9,
+      "num_failed": 3,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_sorted_returns_list",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_sorted_preserves_length",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_sorted_preserves_elements",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "sorted_invariants",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/claude/sorted_invariants__F__anthropic_claude-sonnet-4__1.py",
+    "timestamp": 1779524266.984027,
+    "validation": {
+      "file_path": "generated/claude/sorted_invariants__F__anthropic_claude-sonnet-4__1.py",
+      "syntactically_valid": true,
+      "num_properties": 19,
+      "num_passed": 19,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "urllib_quote_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 0,
+    "output_path": "generated/claude/urllib_quote_roundtrip__D__anthropic_claude-sonnet-4__0.py",
+    "timestamp": 1779524282.352242,
+    "validation": {
+      "file_path": "generated/claude/urllib_quote_roundtrip__D__anthropic_claude-sonnet-4__0.py",
+      "syntactically_valid": true,
+      "num_properties": 10,
+      "num_passed": 9,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_quote_idempotent_on_quoted",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "urllib_quote_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 1,
+    "output_path": "generated/claude/urllib_quote_roundtrip__D__anthropic_claude-sonnet-4__1.py",
+    "timestamp": 1779524296.460118,
+    "validation": {
+      "file_path": "generated/claude/urllib_quote_roundtrip__D__anthropic_claude-sonnet-4__1.py",
+      "syntactically_valid": true,
+      "num_properties": 11,
+      "num_passed": 10,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_quote_idempotent_on_quoted",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "urllib_quote_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/claude/urllib_quote_roundtrip__G3__anthropic_claude-sonnet-4__0.py",
+    "timestamp": 1779524317.991503,
+    "validation": {
+      "file_path": "generated/claude/urllib_quote_roundtrip__G3__anthropic_claude-sonnet-4__0.py",
+      "syntactically_valid": true,
+      "num_properties": 11,
+      "num_passed": 9,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_unquote_percent_sequences",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_quote_empty_safe_encodes_all_special_chars",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "urllib_quote_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/claude/urllib_quote_roundtrip__G3__anthropic_claude-sonnet-4__1.py",
+    "timestamp": 1779524342.3028128,
+    "validation": {
+      "file_path": "generated/claude/urllib_quote_roundtrip__G3__anthropic_claude-sonnet-4__1.py",
+      "syntactically_valid": true,
+      "num_properties": 9,
+      "num_passed": 8,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_unquote_valid_percent_sequences",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "urllib_quote_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 0,
+    "output_path": "generated/claude/urllib_quote_roundtrip__G4__anthropic_claude-sonnet-4__0.py",
+    "timestamp": 1779524374.139215,
+    "validation": {
+      "file_path": "generated/claude/urllib_quote_roundtrip__G4__anthropic_claude-sonnet-4__0.py",
+      "syntactically_valid": true,
+      "num_properties": 20,
+      "num_passed": 17,
+      "num_failed": 3,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_quote_special_chars_encoded",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_quote_result_is_ascii_only",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_unquote_invalid_hex_handling",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "urllib_quote_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 1,
+    "output_path": "generated/claude/urllib_quote_roundtrip__G4__anthropic_claude-sonnet-4__1.py",
+    "timestamp": 1779524406.671338,
+    "validation": {
+      "file_path": "generated/claude/urllib_quote_roundtrip__G4__anthropic_claude-sonnet-4__1.py",
+      "syntactically_valid": true,
+      "num_properties": 25,
+      "num_passed": 23,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_unsafe_characters_encoded",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_quote_length_monotonic",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "urllib_quote_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/claude/urllib_quote_roundtrip__F__anthropic_claude-sonnet-4__0.py",
+    "timestamp": 1779524426.46122,
+    "validation": {
+      "file_path": "generated/claude/urllib_quote_roundtrip__F__anthropic_claude-sonnet-4__0.py",
+      "syntactically_valid": true,
+      "num_properties": 10,
+      "num_passed": 8,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_quote_idempotency",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_valid_percent_encoding_unquotes",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "urllib_quote_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/claude/urllib_quote_roundtrip__F__anthropic_claude-sonnet-4__1.py",
+    "timestamp": 1779524443.2860641,
+    "validation": {
+      "file_path": "generated/claude/urllib_quote_roundtrip__F__anthropic_claude-sonnet-4__1.py",
+      "syntactically_valid": true,
+      "num_properties": 10,
+      "num_passed": 9,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_quote_concatenation_property",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "set_operations",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 0,
+    "output_path": "generated/claude/set_operations__D__anthropic_claude-sonnet-4__0.py",
+    "timestamp": 1779524459.987384,
+    "validation": {
+      "file_path": "generated/claude/set_operations__D__anthropic_claude-sonnet-4__0.py",
+      "syntactically_valid": true,
+      "num_properties": 17,
+      "num_passed": 17,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "set_operations",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 1,
+    "output_path": "generated/claude/set_operations__D__anthropic_claude-sonnet-4__1.py",
+    "timestamp": 1779524474.351865,
+    "validation": {
+      "file_path": "generated/claude/set_operations__D__anthropic_claude-sonnet-4__1.py",
+      "syntactically_valid": true,
+      "num_properties": 18,
+      "num_passed": 17,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_union_intersection_distributive",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "set_operations",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/claude/set_operations__G3__anthropic_claude-sonnet-4__0.py",
+    "timestamp": 1779524497.0902689,
+    "validation": {
+      "file_path": "generated/claude/set_operations__G3__anthropic_claude-sonnet-4__0.py",
+      "syntactically_valid": true,
+      "num_properties": 18,
+      "num_passed": 18,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "set_operations",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/claude/set_operations__G3__anthropic_claude-sonnet-4__1.py",
+    "timestamp": 1779524520.0772212,
+    "validation": {
+      "file_path": "generated/claude/set_operations__G3__anthropic_claude-sonnet-4__1.py",
+      "syntactically_valid": true,
+      "num_properties": 20,
+      "num_passed": 20,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "set_operations",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 0,
+    "output_path": "generated/claude/set_operations__G4__anthropic_claude-sonnet-4__0.py",
+    "timestamp": 1779524549.676189,
+    "validation": {
+      "file_path": "generated/claude/set_operations__G4__anthropic_claude-sonnet-4__0.py",
+      "syntactically_valid": true,
+      "num_properties": 26,
+      "num_passed": 26,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "set_operations",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 1,
+    "output_path": "generated/claude/set_operations__G4__anthropic_claude-sonnet-4__1.py",
+    "timestamp": 1779524582.589473,
+    "validation": {
+      "file_path": "generated/claude/set_operations__G4__anthropic_claude-sonnet-4__1.py",
+      "syntactically_valid": true,
+      "num_properties": 30,
+      "num_passed": 30,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "set_operations",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/claude/set_operations__F__anthropic_claude-sonnet-4__0.py",
+    "timestamp": 1779524606.719539,
+    "validation": {
+      "file_path": "generated/claude/set_operations__F__anthropic_claude-sonnet-4__0.py",
+      "syntactically_valid": true,
+      "num_properties": 16,
+      "num_passed": 16,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "claude-sonnet-4",
+    "function": "set_operations",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/claude/set_operations__F__anthropic_claude-sonnet-4__1.py",
+    "timestamp": 1779524630.886157,
+    "validation": {
+      "file_path": "generated/claude/set_operations__F__anthropic_claude-sonnet-4__1.py",
+      "syntactically_valid": true,
+      "num_properties": 20,
+      "num_passed": 19,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_element_membership_after_intersection",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  }
+]

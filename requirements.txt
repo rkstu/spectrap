@@ -1,0 +1,7 @@
+openai>=1.0,<2.0
+hypothesis>=6.100
+pytest>=7.0
+python-dotenv>=1.0
+z3-solver>=4.12
+numpy>=1.24
+cryptography>=41.0

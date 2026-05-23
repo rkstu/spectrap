@@ -1,0 +1,54 @@
+[
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 0,
+    "output_path": "generated/pilot/json_roundtrip__D__gpt-4o-mini__0.py",
+    "timestamp": 1779521546.3685691,
+    "validation": {
+      "file_path": "generated/pilot/json_roundtrip__D__gpt-4o-mini__0.py",
+      "syntactically_valid": true,
+      "num_properties": 1,
+      "num_passed": 0,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_json_dumps_loads",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/pilot/json_roundtrip__G3__gpt-4o-mini__0.py",
+    "timestamp": 1779521563.2171352,
+    "validation": {
+      "file_path": "generated/pilot/json_roundtrip__G3__gpt-4o-mini__0.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 1,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_load_invalid_json",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  }
+]

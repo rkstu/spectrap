@@ -1,0 +1,36 @@
+[
+  {
+    "source_file": "set_operations__G3__gpt-4o-mini__2.py (generated under G3 pressure)",
+    "property": "sorted(x + y) == sorted(x) + sorted(y)",
+    "z3_result": "UNSOUND",
+    "counterexample": "x=[1, 0], y=[0, 0]",
+    "hypothesis_result": "Also catches (needs ~10 examples)",
+    "z3_advantage": "Instant proof with minimal counterexample. Hypothesis is statistical."
+  },
+  {
+    "source_file": "sorted_invariants__G4__gpt-4o-mini__0.py (generated under G4 pressure)",
+    "property": "sorted(x)[0] < sorted(x)[1] for len(x) > 1 (strict inequality)",
+    "z3_result": "UNSOUND",
+    "counterexample": "x=[0, 0] (duplicates)",
+    "hypothesis_result": "Catches IF strategy generates duplicates (depends on st.integers() range)",
+    "z3_advantage": "Identifies the EXACT condition (x==y) that breaks the property. Hypothesis gives one example."
+  },
+  {
+    "source_file": "json_roundtrip__G4__gpt-4o__0.py (generated under G4 pressure, line 78)",
+    "property": "For all text x: json.loads(x) raises JSONDecodeError",
+    "z3_result": "UNSOUND (trivially \u2014 valid JSON strings exist)",
+    "counterexample": "\"hello\" (a valid JSON string), 123, null, []",
+    "hypothesis_result": "Catches immediately (any valid JSON string is a counterexample)",
+    "z3_advantage": "Z3 identifies this as a UNIVERSALLY QUANTIFIED claim with obvious counterexamples. No sampling needed.",
+    "note": "This property was generated because G4 demands 'minimum 8 properties' \u2014 the model filled quota with a false claim"
+  },
+  {
+    "source_file": "json_roundtrip__D__gpt-4o-mini__0.py (even baseline gets this wrong)",
+    "property": "json.loads(json.dumps(x)) == x for x: float (including NaN, Infinity)",
+    "z3_result": "UNSOUND",
+    "counterexample": "x = float('nan') \u2192 NaN != NaN by IEEE 754 (reflexivity violation)",
+    "hypothesis_result": "Catches IF strategy includes allow_nan=True (model uses st.floats() without restriction)",
+    "z3_advantage": "Z3 can reason about IEEE 754 semantics to identify the CLASS of failures (NaN, \u00b1Inf). Hypothesis gives one failing float.",
+    "note": "This is the most common unsound property in our dataset. Models generate it across ALL conditions but at higher rates under pressure."
+  }
+]

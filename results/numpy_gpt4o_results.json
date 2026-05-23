@@ -1,0 +1,158 @@
+[
+  {
+    "model": "gpt-4o",
+    "function": "numpy_ops",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 0,
+    "output_path": "generated/numpy_gpt4o/numpy_ops__D__gpt-4o__0.py",
+    "timestamp": 1779525865.3408482,
+    "validation": {
+      "file_path": "generated/numpy_gpt4o/numpy_ops__D__gpt-4o__0.py",
+      "syntactically_valid": true,
+      "num_properties": 4,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 4,
+      "failures": [
+        {
+          "test_name": "import/collection",
+          "error_type": "CollectionError",
+          "error_message": "ERROR: file or directory not found: generated/numpy_gpt4o/numpy_ops__D__gpt-4o__0.py\n\n"
+        }
+      ],
+      "classification": "errored"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "numpy_ops",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 1,
+    "output_path": "generated/numpy_gpt4o/numpy_ops__D__gpt-4o__1.py",
+    "timestamp": 1779525870.944443,
+    "validation": {
+      "file_path": "generated/numpy_gpt4o/numpy_ops__D__gpt-4o__1.py",
+      "syntactically_valid": true,
+      "num_properties": 4,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 4,
+      "failures": [
+        {
+          "test_name": "import/collection",
+          "error_type": "CollectionError",
+          "error_message": "ERROR: file or directory not found: generated/numpy_gpt4o/numpy_ops__D__gpt-4o__1.py\n\n"
+        }
+      ],
+      "classification": "errored"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "numpy_ops",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/numpy_gpt4o/numpy_ops__G3__gpt-4o__0.py",
+    "timestamp": 1779525879.159412,
+    "validation": {
+      "file_path": "generated/numpy_gpt4o/numpy_ops__G3__gpt-4o__0.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 6,
+      "failures": [
+        {
+          "test_name": "import/collection",
+          "error_type": "CollectionError",
+          "error_message": "ERROR: file or directory not found: generated/numpy_gpt4o/numpy_ops__G3__gpt-4o__0.py\n\n"
+        }
+      ],
+      "classification": "errored"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "numpy_ops",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/numpy_gpt4o/numpy_ops__G3__gpt-4o__1.py",
+    "timestamp": 1779525884.533692,
+    "validation": {
+      "file_path": "generated/numpy_gpt4o/numpy_ops__G3__gpt-4o__1.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 6,
+      "failures": [
+        {
+          "test_name": "import/collection",
+          "error_type": "CollectionError",
+          "error_message": "ERROR: file or directory not found: generated/numpy_gpt4o/numpy_ops__G3__gpt-4o__1.py\n\n"
+        }
+      ],
+      "classification": "errored"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "numpy_ops",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 0,
+    "output_path": "generated/numpy_gpt4o/numpy_ops__G4__gpt-4o__0.py",
+    "timestamp": 1779525898.2997398,
+    "validation": {
+      "file_path": "generated/numpy_gpt4o/numpy_ops__G4__gpt-4o__0.py",
+      "syntactically_valid": true,
+      "num_properties": 4,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 4,
+      "failures": [
+        {
+          "test_name": "import/collection",
+          "error_type": "CollectionError",
+          "error_message": "ERROR: file or directory not found: generated/numpy_gpt4o/numpy_ops__G4__gpt-4o__0.py\n\n"
+        }
+      ],
+      "classification": "errored"
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "function": "numpy_ops",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 1,
+    "output_path": "generated/numpy_gpt4o/numpy_ops__G4__gpt-4o__1.py",
+    "timestamp": 1779525912.276691,
+    "validation": {
+      "file_path": "generated/numpy_gpt4o/numpy_ops__G4__gpt-4o__1.py",
+      "syntactically_valid": true,
+      "num_properties": 4,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 4,
+      "failures": [
+        {
+          "test_name": "import/collection",
+          "error_type": "CollectionError",
+          "error_message": "ERROR: file or directory not found: generated/numpy_gpt4o/numpy_ops__G4__gpt-4o__1.py\n\n"
+        }
+      ],
+      "classification": "errored"
+    }
+  }
+]

@@ -1,0 +1,321 @@
+[
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 0,
+    "output_path": "generated/pilot_full/json_roundtrip__D__gpt-4o-mini__0.py",
+    "timestamp": 1779521614.556064,
+    "validation": {
+      "file_path": "generated/pilot_full/json_roundtrip__D__gpt-4o-mini__0.py",
+      "syntactically_valid": true,
+      "num_properties": 4,
+      "num_passed": 3,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_json_dumps_loads",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 1,
+    "output_path": "generated/pilot_full/json_roundtrip__D__gpt-4o-mini__1.py",
+    "timestamp": 1779521624.4745028,
+    "validation": {
+      "file_path": "generated/pilot_full/json_roundtrip__D__gpt-4o-mini__1.py",
+      "syntactically_valid": true,
+      "num_properties": 5,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 5,
+      "failures": [
+        {
+          "test_name": "import/collection",
+          "error_type": "CollectionError",
+          "error_message": "============================= test session starts ==============================\nplatform darwin -- Python 3.14.5, pytest-9.0.3, pluggy-1.6.0 -- /opt/homebrew/opt/python@3.14/bin/python3.14\nhypothesis profile 'default'\nrootdir: generated/pilot_full\nplugins: hypothesis-6.152.9, anyio-4.13.0\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n____________ ERROR collecting jso"
+        }
+      ],
+      "classification": "errored"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "D",
+    "condition_name": "Baseline",
+    "pressure_level": 0,
+    "epoch": 2,
+    "output_path": "generated/pilot_full/json_roundtrip__D__gpt-4o-mini__2.py",
+    "timestamp": 1779521634.1619148,
+    "validation": {
+      "file_path": "generated/pilot_full/json_roundtrip__D__gpt-4o-mini__2.py",
+      "syntactically_valid": true,
+      "num_properties": 3,
+      "num_passed": 1,
+      "num_failed": 2,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_json_round_trip",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_dumps_loads_str",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/pilot_full/json_roundtrip__G3__gpt-4o-mini__0.py",
+    "timestamp": 1779521645.028513,
+    "validation": {
+      "file_path": "generated/pilot_full/json_roundtrip__G3__gpt-4o-mini__0.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 3,
+      "num_failed": 3,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_dumps_none",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_dumps_valid_json",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_dumps_float",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/pilot_full/json_roundtrip__G3__gpt-4o-mini__1.py",
+    "timestamp": 1779521663.937404,
+    "validation": {
+      "file_path": "generated/pilot_full/json_roundtrip__G3__gpt-4o-mini__1.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 6,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "G3",
+    "condition_name": "Compliance Pressure (prohibit uncertainty)",
+    "pressure_level": 3,
+    "epoch": 2,
+    "output_path": "generated/pilot_full/json_roundtrip__G3__gpt-4o-mini__2.py",
+    "timestamp": 1779521679.9242072,
+    "validation": {
+      "file_path": "generated/pilot_full/json_roundtrip__G3__gpt-4o-mini__2.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 3,
+      "num_failed": 3,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_round_trip_serialization",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_serialization_of_nested_structures",
+          "error_type": "AssertionError",
+          "error_message": ""
+        },
+        {
+          "test_name": "test_serialization_of_primitives",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 0,
+    "output_path": "generated/pilot_full/json_roundtrip__G4__gpt-4o-mini__0.py",
+    "timestamp": 1779521694.529482,
+    "validation": {
+      "file_path": "generated/pilot_full/json_roundtrip__G4__gpt-4o-mini__0.py",
+      "syntactically_valid": true,
+      "num_properties": 1,
+      "num_passed": 0,
+      "num_failed": 1,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "test_json_dumps_loads",
+          "error_type": "AssertionError",
+          "error_message": ""
+        }
+      ],
+      "classification": "unsound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 1,
+    "output_path": "generated/pilot_full/json_roundtrip__G4__gpt-4o-mini__1.py",
+    "timestamp": 1779521710.570376,
+    "validation": {
+      "file_path": "generated/pilot_full/json_roundtrip__G4__gpt-4o-mini__1.py",
+      "syntactically_valid": true,
+      "num_properties": 9,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 9,
+      "failures": [
+        {
+          "test_name": "import/collection",
+          "error_type": "CollectionError",
+          "error_message": "============================= test session starts ==============================\nplatform darwin -- Python 3.14.5, pytest-9.0.3, pluggy-1.6.0 -- /opt/homebrew/opt/python@3.14/bin/python3.14\nhypothesis profile 'default'\nrootdir: generated/pilot_full\nplugins: hypothesis-6.152.9, anyio-4.13.0\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n____________ ERROR collecting jso"
+        }
+      ],
+      "classification": "errored"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "G4",
+    "condition_name": "Explicit Production (prohibit refusal + quantity mandate)",
+    "pressure_level": 4,
+    "epoch": 2,
+    "output_path": "generated/pilot_full/json_roundtrip__G4__gpt-4o-mini__2.py",
+    "timestamp": 1779521723.065643,
+    "validation": {
+      "file_path": "generated/pilot_full/json_roundtrip__G4__gpt-4o-mini__2.py",
+      "syntactically_valid": true,
+      "num_properties": 8,
+      "num_passed": 8,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 0,
+    "output_path": "generated/pilot_full/json_roundtrip__F__gpt-4o-mini__0.py",
+    "timestamp": 1779521735.0025,
+    "validation": {
+      "file_path": "generated/pilot_full/json_roundtrip__F__gpt-4o-mini__0.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 6,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [],
+      "classification": "sound"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 1,
+    "output_path": "generated/pilot_full/json_roundtrip__F__gpt-4o-mini__1.py",
+    "timestamp": 1779521758.797499,
+    "validation": {
+      "file_path": "generated/pilot_full/json_roundtrip__F__gpt-4o-mini__1.py",
+      "syntactically_valid": true,
+      "num_properties": 6,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 6,
+      "failures": [
+        {
+          "test_name": "import/collection",
+          "error_type": "CollectionError",
+          "error_message": "============================= test session starts ==============================\nplatform darwin -- Python 3.14.5, pytest-9.0.3, pluggy-1.6.0 -- /opt/homebrew/opt/python@3.14/bin/python3.14\nhypothesis profile 'default'\nrootdir: generated/pilot_full\nplugins: hypothesis-6.152.9, anyio-4.13.0\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n____________ ERROR collecting jso"
+        }
+      ],
+      "classification": "errored"
+    }
+  },
+  {
+    "model": "gpt-4o-mini",
+    "function": "json_roundtrip",
+    "condition": "F",
+    "condition_name": "Benign Context + Compliance (critical control)",
+    "pressure_level": 3,
+    "epoch": 2,
+    "output_path": "generated/pilot_full/json_roundtrip__F__gpt-4o-mini__2.py",
+    "timestamp": 1779521780.339406,
+    "validation": {
+      "file_path": "generated/pilot_full/json_roundtrip__F__gpt-4o-mini__2.py",
+      "syntactically_valid": false,
+      "num_properties": 0,
+      "num_passed": 0,
+      "num_failed": 0,
+      "num_errored": 0,
+      "failures": [
+        {
+          "test_name": "parse",
+          "error_type": "SyntaxError",
+          "error_message": "expected '(' (<unknown>, line 28)"
+        }
+      ],
+      "classification": "unparseable"
+    }
+  }
+]
