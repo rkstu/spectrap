@@ -22,7 +22,8 @@ generated/
 # Internal strategy docs (not for public repo)
 context/
 IMPLEMENTATION.md
-
+generate_pdf.py
+paper_internal/
 # OS
 .DS_Store
 
